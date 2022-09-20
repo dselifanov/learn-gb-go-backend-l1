@@ -7,14 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     container: golangci/golangci-lint
     steps:
+      - name: get current dir
+        run: pwd
       - name: Check golangci-lint version
         run: golangci-lint --version
       - name: Run golangci-lint
         run: golangci-lint run -c .golangci.yml -v
-
-
-
-
-
-
-
