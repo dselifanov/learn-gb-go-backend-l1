@@ -4,7 +4,8 @@ on: [push]
 
 jobs:
   checks:
-    runs-on: golangci/golangci-lint
+    runs-on: ubuntu-latest
+    container: golangci/golangci-lint
     steps:
       - name: Check golangci-lint version
         run: golangci-lint --version
