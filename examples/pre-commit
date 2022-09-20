@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Small example for pre-commit git hook
+
+# run golangci-lint before commit
+golangci-lint run -c .golangci.yml
+
+echo "All pre-commit checks done"
