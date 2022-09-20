@@ -8,7 +8,7 @@ jobs:
     container: golangci/golangci-lint
     steps:
       - name: get current dir
-        run: pwd
+        run: pwd && ls -la
       - name: Check golangci-lint version
         run: golangci-lint --version
       - name: Run golangci-lint
