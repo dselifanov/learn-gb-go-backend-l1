@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	println("Small go app")
+	println("Small golang app")
 }
