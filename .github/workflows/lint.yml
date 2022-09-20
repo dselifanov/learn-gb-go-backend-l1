@@ -1,0 +1,19 @@
+name: "Run checks before build"
+
+on: [push]
+
+jobs:
+  checks:
+    runs-on: golangci/golangci-lint
+    steps:
+      - name: Check golangci-lint version
+        run: golangci-lint --version
+      - name: Run golangci-lint
+        run: golangci-lint run -c .golangci.yml -v
+
+
+
+
+
+
+
